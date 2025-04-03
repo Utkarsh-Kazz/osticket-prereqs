@@ -197,7 +197,7 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <p>
 	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" />
 </p>
-<p>Congratulations, there was no error!!</hp>
+<p>Congratulations, hopefully there was no error!!</hp>
 <p>
 	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" />
 </p>
