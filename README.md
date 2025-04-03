@@ -10,7 +10,7 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 
 <h2> Files You Need to Download</h2>
 
-- ### [Download Now](https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) 📁
+- ### [Download Now](https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) 📁
 
 <h2> Software & Technologies Used</h2>
 
