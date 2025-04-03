@@ -74,15 +74,17 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <h3 align="center">Installing PHP Manager</h3>
 <br />
 <p>
-<h3 align="center">Now we need to download PHP which is a backend web server language that is needed to run osTicket. Download the PHP manager file, and agree with all the terms. We've now downloaded the PHP manager into our operating system.</h3>
+<h3 align="center">Now we need to download PHP which is a backend web server language that is needed to run osTicket. 
+	<br />
+	Go to osticket installation folder > Double click "PHPManagerforIIS" > Agree with all the terms and we've now downloaded the PHP manager.</h3>
 <p>
   <img src="https://i.imgur.com/pmwpPEu.png"height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">Install Rewrite Module</h3>
+<h3 align="center">Installing Rewrite Module</h3>
 <br />
 <p>
-<h3 align="center">Download the Rewrite Module file, agree with all the terms and it should now be installed onto the Computer.</h3>
+<h3 align="center"> Go to osticket installation folder > Double click "rewrite_amd64" > Agree with all the terms and it should now be installed onto the Computer.</h3>
 <p>
   <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/28cf2dd0-d39e-45f8-a01b-61aec6657228"height="75%" width="100%"/>
 </p>
