@@ -160,93 +160,46 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
 <br />
 <br />
-<h3 align="center">Assign Permissions: ost-config.php</h3>
+<h3 align="center">Assign Permissions (ost-config.php)</h3>
 <br />
 <p>
-	Disable inheritance -> Remove All:
-</p>
-<p>
-	<img src="https://i.imgur.com/1QtRWEF.png" height="75%" width="100%" />
-</p>
-<p>
-	New Permissions -> Everyone -> All:
-</p>
-<p>
-	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" />
-</p>
-<p>
-	<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" />
+     To assign Permissions, Right click "ost-config.php" > Click "Properties" > Click "Advanced" > Disable inheritance
+     >Click "remove all inherited permissions from the object" > Add everyone to the permissions.
 </p>
 <br />
 <br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
+<h3 align="center">Continue Setting up osTicket </h3>
 <br />
 <p>
-	Name Helpdesk.
-</p>
-<p>
-	Default email (receives email from customers):
-</p>
-<p>
-	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" />
-	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" />
+     Open osTicket in the browser or refresh the webpage and input all the information required. Make sure the email 
+     you choose is your work email which you will use to receive email from customers.
 </p>
 <br />
 <br />
-<h3 align="center">Download and Install HeidiSQL</h3>
+<h3 align="center">Downloading and Installing HeidiSQL</h3>
 <br />
 <p>
 	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" />
 </p>
 <p>
-	Create a new session, root/Password1.
-</p>
-<p>
-	Connect to the session:
-</p>
-<p>
-	<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" "/>
-</p>
-<p>
-	Create a database called “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" />
+	Go back to the “osTicket-Installation-Files” folder and Double click on "HeidiSQL" to install.
+	Then create a new session and input a username and password that you'd remember or simply write it down as
+	it is very important to not forget them. Create and connect.
+	<br />
+	<br />
+	Create a database called “osTicket (Click on "Create New")
 </p>
 <br />
 <br />
 <h3 align="center">Continue Setting up osTicket in the browser</h3>
 <br />
-<p>MySQL Database: osTicket</p>
-<p>
-	MySQL Username: root
-</p>
-<p>
-	MySQL Password: Password1:
-</p>
+<p>Go back to the webpage > Go to the database setting > Input all the MySQL information > Click "Install Now" button</p>
 <p>
 	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" />
 </p>
-<p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
+<p>Congratulations, there was no error!!</hp>
 <p>
 	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" />
-</p>
-<br />
-<br />
-<h3 align="center">Clean up</h3>
-<br />
-<p>
-	Delete: C:\inetpub\wwwroot\osTicket\setup:
-</p>
-<p>
-	<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" />
-</p>
-<p>
-	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" />
 </p>
 <br />
 <br />
