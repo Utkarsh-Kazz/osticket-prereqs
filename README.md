@@ -5,40 +5,40 @@
 </p>
 
 <h1> How to Install osTicket </h1>
-This is an easy guide to installing a help desk ticketing system called osTicket.<br/>
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br/>
 
+<h2> Files to Download </h2>
 
-<h2> Files You Need to Download</h2>
+- ### [Download Files](https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) 📁
 
-- ### [Download Now](https://drive.google.com/drive/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) 📁
+<h2>Environments and Technologies Used</h2>
 
-<h2> Software & Technologies Used</h2>
-
-- Windows 10 (Build 19044)
-- Microsoft Azure (Virtual Machines)
-- Remote Desktop (RDP)
+- Microsoft Azure (Virtual Machines/Compute)
+- Windows 10 (21H2)
+- Windows Remote Desktop 
 - Internet Information Services (IIS)
 
-  <h2> Prerequisites </h2>
+  <h2> List of Prerequisites </h2>
 
-- Create a Virtual Machine in Azure
-- Install osTicket v1.15.8
-- Install HeidiSQL
-- Install MySQL
-- Install PHP
-- install Microsoft Visual C++ Redistributable
+- Creating a Virtual Machine in Azure
+- Installing osTicket v1.15.8
+- Installing HeidiSQL
+- Installing MySQL then and set up user and pass
+- Installing PHP
+- Installing Microsoft Visual C++ Redistributable
   <h2>Steps</h2>
-<h3 align="center">Create Virtual Machine in Azure</h3>
+<h3 align="center">Creating Virtual Machine in Azure</h3>
 <br />
 <p>
-<h3 align="center">First, start by creating a Resource Group inside Azure.</h3>
+<h3 align="center">Create a Resource Group inside Azure.</h3>
 <br />
 </p>
 <p>
-	<img src="https://i.imgur.com/eBi5k2l.png" height="75%" width="100%" />
+<img src="https://i.imgur.com/eBi5k2l.png" height="75%" width="100%" />
 </p>
 <p>
-<h3 align="center">Now, create a Windows 10 Virtual Machine (VM), typically with 2-4 Virtual CPUs. For username and password, it can be anything as we'll be using this info to remote in with our main computer. When creating the Virtual Machine (VM), allow Azure to create a new Virtual Network (Vnet):</h3>
+<h3 align="center">Now, create a Windows 10 Virtual Machine (VM),When creating the Virtual Machine, make sure your VM and resource group have the same region. It is advisable to remember the Username and password you chose and allow Azure to create a new Virtual Network (Vnet).
+After clicking on the 'Review and create" button,it might take a while to complete deployment.</h3>
 <br />
 </p>
 <p>
@@ -46,16 +46,19 @@ This is an easy guide to installing a help desk ticketing system called osTicket
 </p>
 <br />
 <br />
-<h3 align="center">Open your Remote Desktop Connection app on your computer and connect to your Virtual Machine that was created in Azure. </h3>
+<h3 align="center">Open Windows Remote Desktop on your computer and paste the public IP address of the virtual machine that was created, then click on the "connect" button. You will then be asked for the Username and Password of the VM, do that to access the VM. </h3>
 <br />
-<p>
+        <p>
 	<img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/2e71fd86-4198-47aa-aa1a-d0aed1b8e0eb"/>
-	
-
-</p>
+	</p>
 <br />
-<br />
-<h3 align="center">Now we need to install / Enable IIS in Windows. Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows features on or off" > Scroll down to "Internet Information Services (IIS).</h3>
+<h3 align="center">Within the Virtual machine, download the osTicket-Installation-Files.zip.
+	 <p> <br /><br />
+	Unzip it onto your desktop by right clicking it and click on "Extrack all". </h3>
+         </p>
+<h3 align="center">Now we have to enable IIS in Windows (It's a web server that will help run ostickets). 
+	<br />
+Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows features on or off" > Scroll down to "Internet Information Services (IIS).</h3>
 <br />
 <p>
 	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
@@ -68,10 +71,10 @@ This is an easy guide to installing a help desk ticketing system called osTicket
   <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/a6af9c35-e10c-4d7e-b2c8-30ffbe128f08" height="75%" width="100%"/>
 </p>
 <br />
-<h3 align="center">Install PHP Manager</h3>
+<h3 align="center">Installing PHP Manager</h3>
 <br />
 <p>
-<h3 align="center">Download the PHP manager file, and agree with all the terms. We've now downloaded the PHP manager into our operating system.</h3>
+<h3 align="center">Now we need to download PHP which is a backend web server language that is needed to run osTicket. Download the PHP manager file, and agree with all the terms. We've now downloaded the PHP manager into our operating system.</h3>
 <p>
   <img src="https://i.imgur.com/pmwpPEu.png"height="75%" width="100%"/>
 </p>
