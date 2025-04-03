@@ -92,105 +92,68 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <h3 align="center">CREATE DIRECTORY C:\PHP</h3>
 <br />
 <p>
-<h3 align="center"> Open File Explorer, type, "C:\" in the search bar, Right-click and create a new folder called, "PHP". Download php-7.3.8-nts-Win32-VC15-x86.zip from<a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> Files You Need to Download</a>, Extract it by going to where you download the file, Right-click the PHP 7.3.8 file and press extract to the PHP Folder you just created.
+<h3 align="center"> Go to File Explorer > Click on "This PC" > Click on "Windows C(drive)" and create a new folder named "PHP".
+	            Now go to the OSticketinstallation-folder > Right click on "php-7.3.8-nts-Win32-VC15-x86" to extract all > click "Browse" and go to the C drive and direct the extraction to the PHP folder.
 </h3>
 <p>
   <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/18746085-a3cf-4f1f-b0d5-5cd73f969319"height="75%" width="100%"/>
 </p>
 <br/>
-<h3 align="center">VC_REDIST DOWNLOAD</h3>
+<h3 align="center">DOWNLOADING VC_REDIST</h3>
 <br/>
-<h3 align="center"> Download and install VC_Redist, Agree with any terms and agreements and finish installing.
+<h3 align="center"> Double click on "VC_redist.x86, Agree with it's terms and agreements and finish installing.
 </h3>
 <p>
   <img src="https://i.imgur.com/Gx8ryBV.png"75%" width="100%"/>
 </p>
 <br/>
 <h3 align="center">DOWNLOAD MySQL </h3>
-<h3 align="center"> Download and install MySQL, Agree with any terms and agreements up until you get to the password portion. Here you can create a username and password for the database that you'll be using to store the Ticket Information used in osTicket. 
+<h3 align="center"> Go to “osTicket-Installation-Files” folder > Doubleclick "mysql-5.5.62-win32" to begin installation, Make sure to choose "Typical setup".
+	             Lauch it after install and insert the username and password of your choice then make sure to tick all the box.
+	           <br />
+	           <br />
+	            Next, search for IIS in the searchbar and open it as an admin > Double click "PHP Manager" > Click "Register new PHP version" 
+	            > Browse to the PHP floder and choose "php-cgi" > Now reload IIS by clicking Stop(wait) and start. 
 </h3>
 <p>
   <img src="https://i.imgur.com/IVpLg40.png"75%" width="100%"/>
-<br/>
+<br />
   <img src="https://i.imgur.com/zdhWXNx.png" height="75%" width="100%" />
 </p>
-<br/>
-<h3 align="center">Install osTicket v1.15.8</h3>
+<br />
+<br />
+<h3 align="center">Installing osTicket v1.15.8</h3>
 <br />
 <p>
-  Download osTicket (download from within lab files: link).
-</p>
-<p>
-	Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
+	Extract and copy the “upload” folder into the C drive "wwwroot" (“c:\inetpub\wwwroot”). Then change the file named from "upload" to "osTicket"
 </p>
 	<img src="https://i.imgur.com/0MUJLMU.png" height="75%" width="100%" />
 	<img src="https://i.imgur.com/1h9goM8.png" height="75%" width="100%" />
-<p>
-	Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
-</p>
 <p>
 	<img src="https://i.imgur.com/pDikkgq.png" height="75%" width="100%" />
 </p>
 <br />
 <br />
-<h3 align="center">Reload IIS (Open IIS, Stop and Start the server)</h3>
+<h3 align="center">Enable some Extensions in IIS</h3>
 <br />
 <p>
-	Go to sites -> Default -> osTicket:
-</p>
-<p>
-	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" />
-</p>
-<p>
-	On the right, click “Browse *:80”:
-</p>
-<p>
-	<img src="https://i.imgur.com/3iXhNbi.png" height="75%" width="100%"/>
-</p>
-<br />
-<br />
-<h3 align="center">Enable Extensions in IIS: Note that some extensions are not enabled</h3>
-<br />
-<p>
-	Go back to IIS, sites -> Default -> osTicket.
-</p>
-<p>
-	Double-click PHP Manager:
-</p>
-<p>
-	<img src="https://i.imgur.com/LFKo5Hs.png" height="75%" width="100%" />
-</p>
-<p>
-	Click “Enable or disable an extension”.
-</p>
-<p>
-	Enable: php_imap.dll.
-</p>
-<p>
-	Enable: php_intl.dll.
-</p>
-<p>
-	Enable: php_opcache.dll:
-</p>
-<p>
+    Under IIS manager, go to sites--> defualt-->ostickets in the top left hand corner > Click osticket > Click "browse 80" under manage folder to 
+    open the osticket web page. Now back to IIS, Double-click PHP Manager > Click “Enable or disable an extension” > Click enable "php_imap.dll"
+    "php_intl.dll" and "php_opcache.dll".
+    	<br />
+	<br />
+      Now refresh the osTicket site in your browser to observe the changes. 
+      <p>
+	    <br />  
 	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
-</p>
-<br />
-<br />
-<h3 align="center">Refresh the osTicket site in your browser, observe the changes</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/6iSNd4H.png" height="75%" width="100%" />
 </p>
 <br />
 <br />
 <h3 align="center">Rename</h3>
 <br />
 <p>
-	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
-</p>
-<p>
-	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+   Go to Windows C drive > Click "inetpub" >  Click "wwwroot" >  Click "osticket" >  Click "include" and then you change the name of the php 
+   from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to "C:\inetpub\wwwroot\osTicket\include\ost-config.php"
 </p>
 <p>
 	<img src="https://i.imgur.com/TEw71SD.png" height="75%" width="100%" />
