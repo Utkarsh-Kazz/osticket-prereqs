@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/6b11cb27-9fe3-4aa4-8026-d23a96225782)# osticket-prereqs
-
 <p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png"/>
 </p>
@@ -28,26 +26,31 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Installing Microsoft Visual C++ Redistributable
   <h2>Steps</h2>
 <h3 align="center">Creating Virtual Machine in Azure</h3>
-<br />
 <p>
 <h3 align="center">Create a Resource Group inside Azure. Now, create a Windows 10 Virtual Machine (VM),When creating the Virtual Machine, make sure your VM and resource group have the same region. It is advisable to remember the Username and password you chose and allow Azure to create a new Virtual Network (Vnet).
 After clicking on the 'Review and create" button,it might take a while to complete deployment.</h3>
 </p>
 <p>
-	<img src="https://i.imgur.com/dEF1c7h.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/8N7SyL4.png" height="75%" width="100%" />
+          <br />
+	<br />
+        <img src="https://i.imgur.com/7QIUuxj.png" height="35%" width="50%" />
 </p>
 <br />
 <br />
 <h3 align="center">Open Windows Remote Desktop on your computer and paste the public IP address of the virtual machine that was created, then click on the "connect" button. You will then be asked for the Username and Password of the VM, do that to access the VM. </h3>
-<h3 align="center">Within the Virtual machine, download the osTicket-Installation-Files.zip.
+        <p>
+	<img src="https://i.imgur.com/mS1sFhC.png" height="50%" width="70%" />
+	</p>
+<h3>Within the Virtual machine, download the osTicket-Installation-Files.zip.
 	<p>
-	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/IcgeaNv.png" height="50%" width="70%" />
 	</p>
 	<br />
 	 <p> Unzip it onto your desktop by right clicking it and click on "Extrack all". </h3>
          </p>
 	 <p>
-	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/ZoHkqYg.png" height="20%" width="30%" />
          </p>
 	 <br />
   <h3 align="center">Now we have to enable IIS in Windows (It's a web server that will help run ostickets). 
@@ -55,14 +58,14 @@ After clicking on the 'Review and create" button,it might take a while to comple
 Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows features on or off" > Look for "Internet Information Services".</h3>
 <br />
 <p>
-	<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/DNeIRoM.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
 <h3 align="center"> Expand IIS > Expand the "World Wide Web" > Expand "Application Developer" > Check the "CGI" button & press "Ok". You will need CGI to download the PHP Manager which is a back-end web programming language that allows osTicket to run off a web browser.</h3>
 <br />
 <p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/a6af9c35-e10c-4d7e-b2c8-30ffbe128f08" height="75%" width="100%"/>
+  <img src="https://i.imgur.com/nAczn0a.png" height="20%" width="50%" />
 </p>
 <br />
 <h3 align="center">Installing PHP Manager</h3>
@@ -72,9 +75,10 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 	<br />
 	Go to osticket installation folder > Double click "PHPManagerforIIS" > Agree with all the terms and we've now downloaded the PHP manager.</h3>
 <p>
-  <img src="https://i.imgur.com/pmwpPEu.png"height="75%" width="100%"/>
+  <img src="https://i.imgur.com/55s3HDP.png" height="20%" width="50%" />
 	<br/>
-   <img src="https://i.imgur.com/pmwpPEu.png"height="75%" width="100%"/>
+	<br/>
+   <img src="https://i.imgur.com/oHkGLSs.png" height="20%" width="50%" />
 </p>
 <br/>
 <h3 align="center">Installing Rewrite Module</h3>
@@ -82,7 +86,7 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <p>
 <h3 align="center"> Go to osticket installation folder > Double click "rewrite_amd64" > Agree with all the terms and it should now be installed onto the Computer.</h3>
 <p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/28cf2dd0-d39e-45f8-a01b-61aec6657228"height="75%" width="100%"/>
+  <img src="https://i.imgur.com/fDXjTge.png" height="20%" width="50%" />
 </p>
 <br/>
 <h3 align="center">CREATE DIRECTORY C:\PHP</h3>
@@ -93,7 +97,7 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
                     direct the extraction to the PHP folder.
 </h3>
 <p>
-  <img src="https://github.com/Joeljjoseph1998/osticket-prereqs/assets/50834280/18746085-a3cf-4f1f-b0d5-5cd73f969319"height="75%" width="100%"/>
+  <img src="https://i.imgur.com/NFPuc5D.png" height="20%" width="70%" />
 </p>
 <br/>
 <h3 align="center">DOWNLOADING VC_REDIST</h3>
@@ -101,24 +105,27 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <h3 align="center"> Double click on "VC_redist.x86, Agree with it's terms and agreements and finish installing.
 </h3>
 <p>
-  <img src="https://i.imgur.com/Gx8ryBV.png"75%" width="100%"/>
+  <img src="https://i.imgur.com/4vaUR52.png" height="20%" width="70%" />
 </p>
 <br/>
 <h3 align="center">DOWNLOAD MySQL </h3>
 <h3 align="center"> Go to “osTicket-Installation-Files” folder > Doubleclick "mysql-5.5.62-win32" to begin installation, Make sure to choose "Typical setup".
 	             Lauch it after install and insert the username and password of your choice then make sure to tick all the box.
 	           <br />
-	             <p> <img src="https://i.imgur.com/IVpLg40.png"75%" width="100%"/>
-			 <img src="https://i.imgur.com/zdhWXNx.png" height="75%" width="100%" />
+	             <p> <img src="https://i.imgur.com/VkUa41f.png" height="20%" width="50%" />
+			     <br />
+			     <br />
+			 <img src="https://i.imgur.com/iK7iHP1.png" height="20%" width="50%" />
 		     </p>
 	           <br />
 	            Next, search for IIS in the searchbar and open it as an admin > Double click "PHP Manager" > Click "Register new PHP version" 
 	            > Browse to the PHP floder and choose "php-cgi" > Now reload IIS by clicking Stop(wait) and start. 
 </h3>
 <p>
-  <img src="https://i.imgur.com/IVpLg40.png"75%" width="100%"/>
+  <img src="https://i.imgur.com/CSxUqjC.png" height="20%" width="50%" />
 <br />
-  <img src="https://i.imgur.com/zdhWXNx.png" height="75%" width="100%" />
+	<br />
+  <img src="https://i.imgur.com/lxw6vwb.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
@@ -127,9 +134,9 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <p>
 	Extract and copy the “upload” folder into the C drive "wwwroot" (“c:\inetpub\wwwroot”). Then change the file named from "upload" to "osTicket"
 </p>
-	<img src="https://i.imgur.com/1h9goM8.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/c6gwg4e.png" height="20%" width="50%" />
 <p>
-	<img src="https://i.imgur.com/pDikkgq.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/yfwtbkQ.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
@@ -141,14 +148,14 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
     "php_intl.dll" and "php_opcache.dll".
     	<br />
 	 <p> 
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
+	<img src="https://i.imgur.com/vF3kZDd.png" height="20%" width="50%" />
+	<img src="https://i.imgur.com/LzkzPns.png" height="20%" width="50%" />
          </p>
 	<br />
       Now refresh the osTicket site in your browser to observe the changes. 
       <p>
 	    <br />  
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
+	<img src="https://i.imgur.com/6UcBVnL.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
@@ -167,7 +174,7 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
  <p>
 	    <br />  
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
+	<img src="https://i.imgur.com/SV6D0uI.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
@@ -179,7 +186,7 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
   <br />  
  <p>
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%"/>
+	<img src="https://i.imgur.com/PNztWP5.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
@@ -191,12 +198,12 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 	it is very important to not forget them. Create and connect.
 	<br />
 	<p>
-	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/YiJMWhq.png" height="20%" width="50%" />
         </p>
 	<br />
 	Create a database called “osTicket (Click on "Create New")
         <p>
-	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/IJIqulX.png" height="20%" width="50%" />
         </p>
 </p>
 <br />
@@ -206,14 +213,14 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <p>Go back to the webpage > Go to the database setting > Input all the MySQL information > Click "Install Now" button</p>
 <p>Congratulations, hopefully there was no error!!</p>
 <p>
-	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" />
+	<img src="https://i.imgur.com/rSmf2m5.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
 <h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
 <br />
 <p>
-	<img src="https://i.imgur.com/8wvWH0H.jpg" height="75%" width="100%" />
+	<img src="https://i.imgur.com/xddlBLV.png" height="20%" width="50%" />
 </p>
 <br />
 <br />
