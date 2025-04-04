@@ -54,7 +54,6 @@ After clicking on the 'Review and create" button,it might take a while to comple
          </p>
 	 <br />
   <h3 align="center">Now we have to enable IIS in Windows (It's a web server that will help run ostickets). 
-	<br />
 Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows features on or off" > Look for "Internet Information Services".</h3>
 <br />
 <p>
@@ -69,7 +68,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
 <br />
 <h3 align="center">Installing PHP Manager</h3>
-<br />
 <p>
 <h3 align="center">Now we need to download PHP which is a backend web server language that is needed to run osTicket. 
 	<br />
@@ -82,7 +80,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
 <br/>
 <h3 align="center">Installing Rewrite Module</h3>
-<br />
 <p>
 <h3 align="center"> Go to osticket installation folder > Double click "rewrite_amd64" > Agree with all the terms and it should now be installed onto the Computer.</h3>
 <p>
@@ -90,7 +87,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
 <br/>
 <h3 align="center">CREATE DIRECTORY C:\PHP</h3>
-<br />
 <p>
 <h3 align="center"> Go to File Explorer > Click on "This PC" > Click on "Windows C(drive)" and create a new folder named "PHP".
 	            Now go to the OSticketinstallation-folder > Right click on "php-7.3.8-nts-Win32-VC15-x86" to extract all > click "Browse" and go to the C drive and 
@@ -101,7 +97,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 </p>
 <br/>
 <h3 align="center">DOWNLOADING VC_REDIST</h3>
-<br/>
 <h3 align="center"> Double click on "VC_redist.x86, Agree with it's terms and agreements and finish installing.
 </h3>
 <p>
@@ -130,7 +125,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Installing osTicket v1.15.8</h3>
-<br />
 <p>
 	Extract and copy the “upload” folder into the C drive "wwwroot" (“c:\inetpub\wwwroot”). Then change the file named from "upload" to "osTicket"
 </p>
@@ -141,7 +135,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Enable some Extensions in IIS</h3>
-<br />
 <p>
     Under IIS manager, go to sites--> defualt-->ostickets in the top left hand corner > Click osticket > Click "browse 80" under manage folder to 
     open the osticket web page. Now back to IIS, Double-click PHP Manager > Click “Enable or disable an extension” > Click enable "php_imap.dll"
@@ -160,14 +153,12 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Rename</h3>
-<br />
 <p>
    Go to Windows C drive > Click "inetpub" >  Click "wwwroot" >  Click "osticket" >  Click "include" and then you change the name of the php 
    from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to "C:\inetpub\wwwroot\osTicket\include\ost-config.php"
 </p>
 <br />
 <h3 align="center">Assign Permissions (ost-config.php)</h3>
-<br />
 <p>
      To assign Permissions, Right click "ost-config.php" > Click "Properties" > Click "Advanced" > Disable inheritance
      >Click "remove all inherited permissions from the object" > Add everyone to the permissions.
@@ -179,7 +170,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Continue Setting up osTicket </h3>
-<br />
 <p>
      Open osTicket in the browser or refresh the webpage and input all the information required. Make sure the email 
      you choose is your work email which you will use to receive email from customers.
@@ -191,7 +181,6 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Downloading and Installing HeidiSQL</h3>
-<br />
 <p>
 	Go back to the “osTicket-Installation-Files” folder and Double click on "HeidiSQL" to install.
 	Then create a new session and input a username and password that you'd remember or simply write it down as
@@ -209,18 +198,17 @@ Go to your Search Bar > Type "Control Panel" > Click "Programs" > "Turn Windows 
 <br />
 <br />
 <h3 align="center">Continue Setting up osTicket in the browser</h3>
-<br />
 <p>Go back to the webpage > Go to the database setting > Input all the MySQL information > Click "Install Now" button</p>
 <p>Congratulations, hopefully there was no error!!</p>
 <p>
-	<img src="https://i.imgur.com/rSmf2m5.png" height="20%" width="50%" />
+	<img src="https://i.imgur.com/rSmf2m5.png" height="50%" width="80%" />
 </p>
 <br />
 <br />
 <h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
 <br />
 <p>
-	<img src="https://i.imgur.com/xddlBLV.png" height="20%" width="50%" />
+	<img src="https://i.imgur.com/xddlBLV.png" height="50%" width="90%" />
 </p>
 <br />
 <br />
